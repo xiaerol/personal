@@ -224,7 +224,7 @@ async function login(userName,password) {
                 if (data.code === 0) {
                     console.log('\n登录成功：' + data.data.token)
                 } else if (data.code !== 0) {
-                    console.log('\n签到任务：' + data.message)
+                    console.log('\n登录失败：' + data.message)
                 }
             } catch (e) {
                 $.logErr(e, resp)
