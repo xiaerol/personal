@@ -16,7 +16,7 @@ V2P/圈X 重写：
 
 */
 const jsname = '康师傅畅饮社'
-const $ = new Env(jsname);
+const $ = new Env(`康师傅畅饮社`);
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
