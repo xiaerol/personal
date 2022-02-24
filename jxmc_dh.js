@@ -71,15 +71,17 @@ Date.prototype.Format = function (fmt) { //author: meizz
     let secKillConfigInfo = await takeRequest(`jxmc`,`queryservice/GetSecKillConfigInfo`,``,undefined ,true);
     // 秒杀商品信息
     console.log(`秒杀商品信息\n`)
-    secKillConfigInfo.conflist[0].goodslist.forEach((item) => {
-        console.log(`商品名：${item.prizepool } 需要鸡蛋数：${item.neednum }  Token：${item.token}`)
-        exchangePin.forEach((a)=>{
-            if (a.prizepool===item.prizepool){
-                a.token=item.token
-                a.neednum =item.neednum
-            }
+    if (secKillConfigInfo.conflist.length>0){
+        secKillConfigInfo.conflist[0].goodslist.forEach((item) => {
+            console.log(`商品名：${item.prizepool } 需要鸡蛋数：${item.neednum }  Token：${item.token}`)
+            exchangePin.forEach((a)=>{
+                if (a.prizepool===item.prizepool){
+                    a.token=item.token
+                    a.neednum =item.neednum
+                }
+            })
         })
-    })
+    }
     //兑换
     console.log(`兑换$\n`)
     let goodsList = await takeRequest(`jxmc`, `queryservice/GetGoodsListV2`, ``, undefined, false);
