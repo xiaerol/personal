@@ -31,21 +31,6 @@
 //不要问我安卓11能不能抓包,安卓11需要手动安装证书
 //请注意填写变量格式,reward_video这个值是使用 单引号 , dwsj_build、dwsj_UPbuild、dwsj_signtime这三是没有引号,其他的都是 双引号
 
-module.exports ={"code":200,"dwsj_variable_data":{
-        "dwsj_data":[{
-            "user_ID":"29970776",
-            "dwsj_build":true,
-            "dwsj_UPbuild":true,
-            "dwsj_signtime":9,
-            "dwsj_token":"259d1d3d9c9f4d9094fc4abe27eedc5a",
-            "dwsj_body":"JXK1xQD1C343Li/cEkn9aBVZ4stRpoO9yC8R4Z73SWQA61/AXfHMImb2ursQubPsPjWC8TVAfN3t4iELNiSa66VyIo+f4vfxGTa6OF3eBlmmypwcut2mgHDRkFGE+ZmUiB3uEGfZ3v+e4G5/TL9BMMzemqydO1EDtIvS+F0uLwY=",
-            "dwsj_sign":"kNRvng/2dixZJ5v2S8Ny57wX2EFR4PYdHCc9HhbNkBPkKOpBJBsDZKZI0Pe5gdvRdMnU5oTKI5v2T8veJcRIsofopv6LS8yOVZLkwH91QP/6EV+CS8tuc7m3LaFtvPBlkaAenNbSPmS0TPH3coKFJAR0WLn8UcZo5lRZo8qaTaA=",
-            "dwsj_view":"Sd5KLmjXlFa7AqSHumZF2+bDuuMciz4IhnWCsSJCvrpjJvrChZIjqNk5bsdxhb30ja6s0i30ISkFaiw8Qq5MbADc2pkCiRiQFxdAPdsE7Tv6tGW42ZepBbBcaoIpcu6Dq/gHxvNf4EMEDgsZh7wAPcgxso/NfLD3jhbUt/s7ikg=",
-            "dwsj_UA":"找任意一个带有 https://sdsj.shandw.com 链接的请求头(编程上称headers,俗话称提交数据头或协议头)上的 User-Agent 值,这个可以留空不填",
-            "reward_video":'这个填观看广告视频数据,抓包找 https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward 这个条链接(不一定每次广告视频都出现),然后复制他的全部请求体(编程字面称body,俗话说提交数据),粘贴,一般是这的{"message":"xxx","cypher":3}'
-        }
-        ]}}
-
 
 
 
