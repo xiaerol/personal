@@ -20,9 +20,10 @@ const ByType = $.isNode() ? (process.env.BYTYPE ? process.env.BYTYPE : `888`):`8
 // 商品名：88红包 jxmc_2112duijianghb 需要鸡蛋数：1466  Token：c1334e37c84995d41dfbdace607ac329
 const exchangePin = [
     {
-        token: "07b893d4ddcd1d5936d5a08566fbd5aa",
-        neednum: 641,
-        prizepool: "jxmc_jindian2203" //商品民
+        pin: "",
+        token: "bceeb345f429fa9ff20d13b9f9e55e7b",
+        neednum: 427 ,
+        prizepool: "jxmc_guliduo2203" //商品民
     },
 
 ]
@@ -67,30 +68,7 @@ Date.prototype.Format = function (fmt) { //author: meizz
     $.cookie = cookiesArr[0];
     ua = `jdpingou;iPhone;4.9.4;14.6;${randomWord(false, 40, 40)};network/wifi;model/iPhone9,2;appBuild/100579;ADID/00000000-0000-0000-0000-000000000000;supportApplePay/1;hasUPPay/0;pushNoticeIsOpen/1;hasOCPay/0;supportBestPay/0;session/936;pap/JA2019_3111800;brand/apple;supportJDSHWK/1;Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E200`;
     activeid = 'jxmc_active_0001';
-    // let secKillConfigInfo = await takeRequest(`jxmc`,`queryservice/GetSecKillConfigInfo`,``,undefined ,true);
-    // 秒杀商品信息
-    // console.log(`秒杀商品信息\n`)
-    // secKillConfigInfo.conflist[0].goodslist.forEach((item) => {
-    //  console.log(`商品名：${item.prizepool } 需要鸡蛋数：${item.neednum }  Token：${item.token}`)
-    //  exchangePin.forEach((a)=>{
-    //      if (a.prizepool===item.prizepool){
-    //          a.token=item.token
-    //         a.neednum =item.neednum
-    //      }
-    //  })
-    //})
-    //兑换
-    //console.log(`兑换$\n`)
-   // let goodsList = await takeRequest(`jxmc`, `queryservice/GetGoodsListV2`, ``, undefined, false);
-   // goodsList.goodslist.forEach((item) => {
-   //     console.log(`商品名：${item.prizepool} 需要鸡蛋数：${item.neednum}  Token：${item.token}`)
-     //   exchangePin.forEach((a)=>{
-    //        if (a.prizepool===item.prizepool){
-     //           a.token=item.token
-     //           a.neednum =item.neednum
-     //       }
-      // })
-   // })
+
     for (let i = 0; i < cookiesArr.length; i++) {
         $.index = i + 1;
         $.cookie = cookiesArr[i];
